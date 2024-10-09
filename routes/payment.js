@@ -3,7 +3,6 @@ const router = express.Router();
 const PaymentController = require('../controllers/PaymentController');
 const PaymentService = require('../Services/paymentService');
 
-// Supondo que você tenha os modelos necessários importados
 const { Transaction, Cart, Product } = require('../models');
 
 const paymentService = new PaymentService(Transaction, Cart, Product);
